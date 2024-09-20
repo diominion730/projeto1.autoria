@@ -1,0 +1,169 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8; /* Fundo cinza claro */
+    color: #22223b; /* Texto principal azul escuro */
+}
+ 
+header {
+    background-color: #4a4e69; /* Cabeçalho roxo profundo */
+    color: #f0f4f8; /* Texto branco */
+    padding: 1em 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    color: #f0f4f8; /* Links brancos */
+    text-decoration: none;
+    margin: 0 1em;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #c9ada7; /* Muda para rosa claro ao passar o mouse */
+}
+
+main {
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 1em;
+    background-color: #fff; /* Fundo branco */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h1, h2 {
+    color: #ffffff; 
+    text-align: center;
+}
+
+.titulo {
+    color: black;
+    text-align: center;
+}
+
+audio, video {
+    width: 100%;
+    margin: 1em 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+}
+
+label {
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    margin-bottom: 1em;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus {
+    border-color: #4a4e69; /* Borda roxa ao focar */
+}
+
+input[type="submit"] {
+    background-color: #9a8c98; /* Botão rosa suave */
+    color: #fff;
+    border: none;
+    padding: 0.75em;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #4a4e69; /* Muda para roxo ao passar o mouse */
+}
+
+#musicas, #videos {
+    margin-top: 2em;
+    padding: 1em;
+    background-color: #e9ecef; /* Seções de áudio e vídeo com fundo claro */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#musicas h2, #videos h2 {
+    color: #22223b; /* Títulos das seções em azul escuro */
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    iframe, video {
+        width: 100%;
+        height: auto;
+    }
+
+    audio {
+        width: 100%; /* Ajusta o tamanho do áudio para ocupar toda a largura */
+    }
+
+    header, footer {
+        text-align: center;
+    }
+
+    nav a {
+        display: block;
+        margin: 0.5em 0;
+    }
+
+    .audio-card {
+        flex-direction: column; /* Empilha o conteúdo verticalmente */
+        align-items: flex-start; /* Alinha à esquerda para melhor espaçamento */
+    }
+
+    .audio-card img {
+        width: 80px; /* Reduz o tamanho da imagem */
+        height: 80px;
+        margin-right: 0; /* Remove a margem à direita */
+        margin-bottom: 10px; /* Adiciona um espaçamento inferior */
+    }
+
+    .audio-card audio {
+        width: 100%; /* Ajusta a largura do áudio para o contêiner */
+    }
+}
+
+.audio-card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.audio-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+.audio-card audio {
+    width: 300px;
+}
+
+.audio-info {
+    display: flex;
+    flex-direction: column;
+}
+.audio-info h3 {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
